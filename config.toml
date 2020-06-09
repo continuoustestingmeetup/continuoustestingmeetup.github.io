@@ -1,0 +1,119 @@
+######################## default configuration ####################
+baseURL = "https://www.continuoustestingmeetup.com"
+title = "Continuous Testing Meetup"
+theme = "twenty-twenty-hugo"
+languageName = "En"
+languageCode = "en-us"
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "10"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = [] # desable language from here
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+
+
+
+############################## Output ###############################
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+author = "author"
+
+############################## navigation ###############################
+
+# main menu
+[[menu.main]]
+name = "Home"
+URL = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+URL = "about"
+weight = 2
+
+# [[menu.main]]
+# name = "Blog"
+# URL = "blog"
+# weight = 3
+
+# [[menu.main]]
+# name = "Contact"
+# URL = "contact"
+# weight = 4
+
+# [[menu.main]]
+# name = "Sample Page"
+# URL = "sample-page"
+# weight = 5
+
+# only desktop menu
+[[menu.desktop]]
+name = "About"
+URL = "about"
+weight = 1
+
+
+#################### default parameters ################################
+[params]
+# Meta data
+description = "This is the Continuous Testing Meetup Website"
+author = "Continuous Testing Meetup"
+
+
+# banner
+[params.banner]
+heading = ""
+image = "images/ctm_online.png"
+
+# blog
+[params.blog]
+heading = "A community for testers & developers"
+
+# call to action
+[params.call_to_action]
+enable = false
+title = "Contact us for more information."
+content = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis"
+button_label = "Contact Us"
+button_url = "contact"
+
+# gallery
+[params.gallery]
+enable = false
+
+  [[params.gallery.gallery_item ]]
+  image = "images/ctm_online.png"
+  
+  [[params.gallery.gallery_item ]]
+  image = "images/ctm_online.png"
+
+
+# footer
+[params.footer]
+title = "Continuous Testing Meetup"
+content = "CTM is a community for testers and developers to share their ideas and learn from peers. <br><br> We bring people together to discuss not only technology but also all the required skills to succeed in today's testing industry."
+twitter_url = "https://twitter.com/ct_meetup"
+twitter_description = "ct_meetup"
+youtube_url = "https://www.youtube.com/channel/UCzUaF3G8L5rfoh9xR6a51kg"
+youtube_description = "Sauce Labs channel"
+meetup_berlin_url = "https://www.meetup.com/continuous-testing-meetup-berlin"
+meetup_berlin_description = "Berlin Meetup"
+meetup_london_url = "https://www.meetup.com/CTM-Continuous-Testing-Meetup-London"
+meetup_london_description = "London Meetup"
+github_url = "https://github.com/continuoustestingmeetup/continuoustestingmeetup.github.io"
+github_description = "GitHub"
+copyright = "&copy; 2020 Continuous Testing Meetup"
+
+# events (with video and/or slides), submit your talk, and sponsors
