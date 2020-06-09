@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://www.continuoustestingmeetup.com/"
+baseURL = "https://www.continuoustestingmeetup.com/"
 title = "Continuous Testing Meetup"
 theme = "twenty-twenty-hugo"
 languageName = "En"
