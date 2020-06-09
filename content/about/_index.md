@@ -1,7 +1,7 @@
 ---
 title: "About CTM"
 # meta description
-description: "This is the CTM description and values"
+description: "CTM description and values"
 # save as draft
 draft: false
 ---

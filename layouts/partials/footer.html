@@ -70,6 +70,9 @@
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
+<!-- https://kenwheeler.github.io/slick/ -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
 
@@ -78,3 +81,14 @@
 <script src="{{ $search.Permalink }}"></script>
 
 <script src="{{`plugins/search.js` | absURL }}"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.slideshow').slick({
+			adaptiveHeight: true,
+      fade: true,
+      cssEase: 'linear',
+      dots: true
+		});
+	});
+</script>

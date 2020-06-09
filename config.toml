@@ -43,10 +43,10 @@ name = "About"
 URL = "about"
 weight = 2
 
-# [[menu.main]]
-# name = "Blog"
-# URL = "blog"
-# weight = 3
+[[menu.main]]
+name = "Events"
+URL = "events"
+weight = 3
 
 # [[menu.main]]
 # name = "Contact"
@@ -77,8 +77,8 @@ author = "Continuous Testing Meetup"
 heading = ""
 image = "images/ctm_online.png"
 
-# blog
-[params.blog]
+# events
+[params.events]
 heading = "A community for testers & developers"
 
 # call to action
