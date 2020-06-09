@@ -30,4 +30,4 @@ jobs:
           user_name: 'diemol-bot'
           user_email: 'diemol-bot@users.noreply.github.com'
           commit_message: ${{ github.event.head_commit.message }}
-          # cname: www.continuoustestingmeetup.com
+          cname: www.continuoustestingmeetup.com
