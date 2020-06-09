@@ -68,7 +68,7 @@ weight = 1
 #################### default parameters ################################
 [params]
 # Meta data
-description = "This is the Continuous Testing Meetup Website"
+description = "A community for testers & developers"
 author = "Continuous Testing Meetup"
 
 
