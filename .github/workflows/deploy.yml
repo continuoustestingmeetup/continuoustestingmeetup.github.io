@@ -1,0 +1,31 @@
+name: Publish CTM Site
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    # Skip job based on the commit message
+    if: contains(toJson(github.event.commits), '[skip ci]') == false
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.66.0'
+      - name: Build
+        run: hugo --minify
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}
+          publish_dir: ./public
+          publish_branch: master
+          user_name: 'diemol-bot'
+          user_email: 'diemol-bot@users.noreply.github.com'
+          commit_message: ${{ github.event.head_commit.message }}
+          # cname: www.continuoustestingmeetup.com
