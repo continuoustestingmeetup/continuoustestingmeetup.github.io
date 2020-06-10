@@ -20,8 +20,8 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-  {{ $arrows := resources.Get "css/slick-arrows.css" | minify }}
-  <link rel="stylesheet" href="{{ $arrows.Permalink }}" media="screen">
+  {{ $custom := resources.Get "css/custom.css" | minify }}
+  <link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
