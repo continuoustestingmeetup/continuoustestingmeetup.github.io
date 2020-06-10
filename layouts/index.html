@@ -29,7 +29,7 @@
       </div>
       {{ end }}
       <div class="wp-block-columns columns alignwide">
-        {{ range (where .Site.RegularPages "Section" "events")}}
+        {{ range first 4 (where .Site.RegularPages "Section" "events")}}
         <div class="column">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
