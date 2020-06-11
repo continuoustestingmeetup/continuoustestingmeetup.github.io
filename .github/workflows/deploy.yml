@@ -20,7 +20,7 @@ jobs:
       - name: Update theme
         run: git submodule update --init --recursive
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --buildFuture
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
