@@ -24,15 +24,35 @@
               <h2 class="widget-title subheading heading-size-3">Find Us</h2>
               <div class="textwidget">
                 <p>
-                  <a href="{{ .twitter_url | absURL }}" target="_blank">{{ .twitter_description | markdownify }}</a>
+                  <a href="{{ .twitter_url | absURL }}" target="_blank">
+                    <i class="{{ .twitter_icon }}"></i>
+                    {{ .twitter_description | markdownify }}
+                  </a>
                   <br>
-                  <a href="{{ .youtube_url | absURL }}" target="_blank">{{ .youtube_description | markdownify }}</a>
+                  <a href="{{ .youtube_url | absURL }}" target="_blank">
+                    <i class="{{ .youtube_icon }}"></i>
+                    {{ .youtube_description | markdownify }}
+                  </a>
                   <br>
-                  <a href="{{ .meetup_berlin_url | absURL }}" target="_blank">{{ .meetup_berlin_description | markdownify }}</a>
+                  <a href="{{ .meetup_berlin_url | absURL }}" target="_blank">
+                    <i class="{{ .meetup_berlin_icon }}"></i>
+                    {{ .meetup_berlin_description | markdownify }}
+                  </a>
                   <br>
-                  <a href="{{ .meetup_london_url | absURL }}" target="_blank">{{ .meetup_london_description | markdownify }}</a>
+                  <a href="{{ .meetup_london_url | absURL }}" target="_blank">
+                    <i class="{{ .meetup_london_icon }}"></i>
+                    {{ .meetup_london_description | markdownify }}
+                  </a>
                   <br>
-                  <a href="{{ .github_url | absURL }}" target="_blank">{{ .github_description | markdownify }}</a>
+                  <a href="{{ .github_url | absURL }}" target="_blank">
+                    <i class="{{ .github_icon }}"></i>
+                    {{ .github_description | markdownify }}
+                  </a>
+                  <br>
+                  <a href="{{ .slack_url | absURL }}" target="_blank">
+                    <i class="{{ .slack_icon }}"></i>
+                    {{ .slack_description | markdownify }}
+                  </a>
                 </p>
               </div>
             </div>

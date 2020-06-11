@@ -16,9 +16,12 @@
   {{ $style := resources.Get "css/style.css" | minify }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" media="screen">
 
-  {{ "<!--https://kenwheeler.github.io/slick/ -->" | safeHTML }}
+  {{ "<!-- https://kenwheeler.github.io/slick/ -->" | safeHTML }}
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  {{ "<!-- Fontawesome -->" | safeHTML }}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   {{ $custom := resources.Get "css/custom.css" | minify }}
   <link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">

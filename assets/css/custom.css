@@ -23,3 +23,7 @@
         width: calc(100% - 5rem);
     }
 }
+
+.textwidget a {
+    text-decoration: none;
+}
