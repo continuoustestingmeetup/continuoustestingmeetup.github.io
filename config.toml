@@ -48,21 +48,22 @@ name = "Events"
 URL = "events"
 weight = 3
 
-# [[menu.main]]
-# name = "Contact"
-# URL = "contact"
-# weight = 4
-
-# [[menu.main]]
-# name = "Sample Page"
-# URL = "sample-page"
-# weight = 5
+[[menu.main]]
+name = "Submit your talk"
+URL = "submit"
+weight = 4
 
 # only desktop menu
 [[menu.desktop]]
 name = "About"
 URL = "about"
 weight = 1
+
+# only desktop menu
+[[menu.desktop]]
+name = "Submit your talk"
+URL = "submit"
+weight = 2
 
 
 #################### default parameters ################################
@@ -116,4 +117,4 @@ github_url = "https://github.com/continuoustestingmeetup/continuoustestingmeetup
 github_description = "GitHub"
 copyright = "&copy; 2020 Continuous Testing Meetup"
 
-# submit your talk, and sponsors
+# submit your talk
