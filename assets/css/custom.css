@@ -27,3 +27,7 @@
 .textwidget a {
     text-decoration: none;
 }
+
+.textwidget i {
+    margin-right: 5px;
+}
