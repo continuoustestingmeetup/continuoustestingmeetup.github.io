@@ -8,8 +8,14 @@
 				{{  humanize (replace . "categories" "category") }}
 				{{ end }}
 				{{ end }}
-				:</span> <span class="vcard">{{ .Title }}</span></h1>
-	</div>
+				:</span> <span class="vcard">{{ .Title }}</span>
+		</h1>
+		<h5>
+			<a href="/events" title="Read more">
+			All events
+			</a>
+		</h3>
+</div>
 </header>
 
 {{ range .Pages }}
