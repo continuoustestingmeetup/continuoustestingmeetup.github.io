@@ -28,22 +28,22 @@
 			</div><!-- .post-meta-wrapper -->
 		</div><!-- .entry-header-inner -->
 	</header><!-- .entry-header -->
+  {{if .Params.Path }}
 	<figure class="featured-media-">		
 		{{ $path := .Params.Path }}
-		{{ if $path }}
-			{{ $filepath := printf "/static%s" $path }}
-			{{- $files := readDir $filepath }} 
-			<div class="slideshow featured-media-inner section-inner medium">
-			{{- range $files -}} 
-				{{ if ne .Name ".DS_Store" }}
-					{{- $absoluteUrl := print $path "/" .Name | absURL }}
-					<img src="{{ $absoluteUrl | absURL }}" width="1200" height="769"
-					sizes="(max-width: 1200px) 100vw, 1200px">
-				{{ end }}
-			{{- end }} 
-			</div><!-- .featured-media-inner -->
-		{{ end }}
+		{{ $filepath := printf "/static%s" $path }}
+		{{- $files := readDir $filepath }} 
+		<div class="slideshow featured-media-inner section-inner medium">
+		{{- range $files -}} 
+			{{ if ne .Name ".DS_Store" }}
+				{{- $absoluteUrl := print $path "/" .Name | absURL }}
+				<img src="{{ $absoluteUrl | absURL }}" width="1200" height="769"
+				sizes="(max-width: 1200px) 100vw, 1200px">
+			{{ end }}
+		{{- end }} 
+		</div><!-- .featured-media-inner -->
 	</figure><!-- .featured-media -->
+  {{end}}
 	<div class="post-inner thin">
 		<div class="entry-content">
 			<p>{{ .Summary }}</p>
