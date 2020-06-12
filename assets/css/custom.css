@@ -31,3 +31,8 @@
 .textwidget i {
     margin-right: 5px;
 }
+
+.no-decoration {
+    text-decoration: none;
+    color: #000;
+}
