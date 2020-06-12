@@ -24,6 +24,10 @@
     }
 }
 
+.entry-content.summary {
+    text-align: center;
+}
+
 .textwidget a {
     text-decoration: none;
 }
