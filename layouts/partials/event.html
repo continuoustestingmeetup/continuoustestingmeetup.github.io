@@ -47,10 +47,10 @@
 	<div class="post-inner thin">
 		<div class="entry-content summary">
 			<p>{{ .Summary }}</p>
-			<div class="read-more-button-wrap">
-        <a href="{{.Permalink}}" class="more-link"><span class="faux-button">READ MORE</span></a>
-        {{if .Params.Registration }}
-        <a class="more-link" href="{{ .Params.Registration }}" target="_blank"><span class="faux-button">Register</span></a>
+			<div class="wp-block-button is-style-outline">
+        <a href="{{.Permalink}}" class="wp-block-button__link">READ MORE</a>
+				{{ if and (ge .Date.Unix now.Unix) (.Params.Registration) }}
+        <a class="wp-block-button__link" href="{{ .Params.Registration }}" target="_blank">Register</a>
         {{ end }}
       </div>
 		</div><!-- .entry-content -->

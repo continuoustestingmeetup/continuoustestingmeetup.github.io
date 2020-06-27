@@ -44,9 +44,12 @@
                 </a>
               </h3>
               <p>{{ .Date.Format "Jan 02 2006, 15:04 MST"}}</p>
+              {{ if ge .Date.Unix now.Unix }}
+                <p>Future!</p>
+              {{ end }}
               <div class="wp-block-button is-style-outline">
                 <a class="wp-block-button__link" href="{{ .Permalink }}">Read More</a>
-                {{if .Params.Registration }}
+                {{ if and (ge .Date.Unix now.Unix) (.Params.Registration) }}
                   <a class="wp-block-button__link" href="{{ .Params.Registration }}" target="_blank">Register</a>
                 {{ end }}
               </div>
