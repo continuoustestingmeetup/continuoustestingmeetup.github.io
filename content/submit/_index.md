@@ -9,11 +9,6 @@ draft: false
 Thank you for considering to submit a talk! We are looking forward to read 
 your proposal 😊
 
-We are a community for testers, developers, and anyone who wants 
-to share their ideas and learn from peers. We bring people together 
-to discuss not only technology but also all the skills that are required 
-to succeed in today's testing industry.
-
 We welcome any topic that can contribute to that goal.
 
 #### But I've never done a presentation 😰
