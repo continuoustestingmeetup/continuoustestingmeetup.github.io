@@ -47,3 +47,18 @@ p:not(.footer-copyright) {
     text-decoration: none;
     color: #000;
 }
+
+fieldset {
+    border: 5px solid #cd2653;
+    padding: 0rem;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.upcoming {
+    color: #cd2653;
+}
+
+h4.upcoming {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -26,6 +26,12 @@
 					</li>
 				</ul>
 			</div><!-- .post-meta-wrapper -->
+      {{ if ge .Date.Unix now.Unix }}
+      <h4 class="upcoming">
+        <i class="fa fa-meetup"></i>
+        Upcoming Event!
+      </h4>
+      {{ end }}
 		</div><!-- .entry-header-inner -->
 	</header><!-- .entry-header -->
   {{if .Params.Path }}

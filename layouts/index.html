@@ -34,9 +34,16 @@
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
               <figure class="wp-block-image alignfull size-full">
-                <a href="{{ .Permalink }}" title="Read more">
-                  <img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37"/>
-                </a>
+                {{ if ge .Date.Unix now.Unix }}
+                <fieldset>
+                  <legend class="upcoming"><i class="fa fa-meetup"></i>Upcoming event</legend>
+                {{ end }}
+                  <a href="{{ .Permalink }}" title="Read more">
+                    <img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37"/>
+                  </a>
+                {{ if ge .Date.Unix now.Unix }}
+                </fieldset>
+                {{ end }}
               </figure>
               <h3>
                 <a href="{{ .Permalink }}" class="no-decoration" title="Read more">
@@ -44,9 +51,6 @@
                 </a>
               </h3>
               <p>{{ .Date.Format "Jan 02 2006, 15:04 MST"}}</p>
-              {{ if ge .Date.Unix now.Unix }}
-                <p>Future!</p>
-              {{ end }}
               <div class="wp-block-button is-style-outline">
                 <a class="wp-block-button__link" href="{{ .Permalink }}">Read More</a>
                 {{ if and (ge .Date.Unix now.Unix) (.Params.Registration) }}
