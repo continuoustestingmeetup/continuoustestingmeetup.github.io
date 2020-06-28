@@ -12,9 +12,29 @@
   {{ with.Site.Params.banner.image}}
   <figure class="featured-media">
     <div class="featured-media-inner section-inner">
-      <img width="1200" height="769" src="{{ . | absURL }}"
+      <img width="550" height="769" src="{{ . | absURL }}"
         class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
         sizes="(max-width: 1200px) 100vw, 1200px" />
+    </div>
+
+    {{ $imagesPath := "/images" }}
+    {{ $imagesRootPath := printf "/static%s" $imagesPath }}
+    {{- $directories := readDir $imagesRootPath }} 
+    <div class="home-slideshow featured-media-inner section-inner medium">    
+    {{- range $directories -}} 
+      {{ if .IsDir }}
+        {{- $directoryPath := print $imagesPath "/" .Name }}
+        {{- $directoryFullPath := printf "/static%s" $directoryPath }}
+        {{- $imagesInDirectory := readDir $directoryFullPath }} 
+        {{- range $imagesInDirectory -}} 
+          {{ if ne .Name ".DS_Store" }}
+            {{- $absoluteUrl := print $directoryPath "/" .Name | absURL }}
+            <img src="{{ $absoluteUrl | absURL }}" width="1300" height="769"
+            class="upcoming" sizes="(max-width: 1300px) 120vw, 1300px">
+              {{ end }}
+        {{- end }}
+      {{ end }}
+    {{- end }}
     </div>
   </figure>
   {{end}}

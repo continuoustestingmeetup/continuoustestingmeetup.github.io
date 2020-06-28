@@ -58,7 +58,23 @@ fieldset {
     color: #cd2653;
 }
 
+.home-slideshow {
+    border-top: 4px solid #cd2653;
+    border-bottom: 4px solid #cd2653;
+    border-left: 4px solid #cd2653;
+    margin-top: 10px;
+}
+
+img.upcoming {
+    border-right: 4px solid #cd2653;
+    padding: 2px;
+}
+
 h4.upcoming {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.section-inner.medium {
+    max-width: 105rem;
 }
