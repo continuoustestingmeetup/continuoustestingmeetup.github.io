@@ -48,12 +48,6 @@ p:not(.footer-copyright) {
     color: #000;
 }
 
-fieldset {
-    border: 5px solid #cd2653;
-    padding: 0rem;
-    font-family: 'Montserrat', sans-serif !important;
-}
-
 .upcoming {
     color: #cd2653;
 }
