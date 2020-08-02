@@ -57,7 +57,7 @@
       </div>
       <div class="wp-block-columns columns alignwide">
         {{ range first 2 (where (where .Site.RegularPages "Section" "events") "Date" "ge" (now))}}
-        <div class="column">
+        <div class="column aligncenter">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
               <figure class="wp-block-image alignfull size-full">
@@ -65,13 +65,13 @@
                   <img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37"/>
                 </a>
               </figure>
-              <h3>
+              <h4>
                 <a href="{{ .Permalink }}" class="no-decoration" title="Read more">
                   {{ .Title }}
                 </a>
-              </h3>
+              </h4>
               <p>{{ .Date.Format "Jan 02 2006, 15:04 MST"}}</p>
-              <div class="wp-block-button is-style-outline">
+              <div class="wp-block-button is-style-outline aligncenter">
                 <a class="wp-block-button__link" href="{{ .Permalink }}">Read More</a>
                 {{ if and (ge .Date.Unix now.Unix) (.Params.Registration) }}
                   <a class="wp-block-button__link" href="{{ .Params.Registration }}" target="_blank">Register</a>
@@ -98,13 +98,13 @@
                   <img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37"/>
                 </a>
               </figure>
-              <h3>
+              <h5>
                 <a href="{{ .Permalink }}" class="no-decoration" title="Read more">
                   {{ .Title }}
                 </a>
-              </h3>
+              </h5>
               <p>{{ .Date.Format "Jan 02 2006, 15:04 MST"}}</p>
-              <div class="wp-block-button is-style-outline">
+              <div class="wp-block-button is-style-outline aligncenter">
                 <a class="wp-block-button__link" href="{{ .Permalink }}">Read More</a>
                 {{ if and (ge .Date.Unix now.Unix) (.Params.Registration) }}
                   <a class="wp-block-button__link" href="{{ .Params.Registration }}" target="_blank">Register</a>
