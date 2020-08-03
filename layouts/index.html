@@ -50,12 +50,12 @@
 
   <div class="post-inner thin">
     <div class="entry-content">
-      <div class="wp-block-group alignwide">
+      <div class="wp-block-group alignwide mb-0">
         <div class="wp-block-group__inner-container">
           <h4 class="has-text-align-center"><i class="fa fa-meetup"> </i>Upcoming events</h4>
         </div>
       </div>
-      <div class="wp-block-columns columns alignwide">
+      <div class="wp-block-columns columns alignwide mt-0">
         {{ range first 2 (where (where .Site.RegularPages "Section" "events") "Date" "ge" (now))}}
         <div class="column aligncenter">
           <div class="wp-block-group">
@@ -85,7 +85,8 @@
 
       <div class="wp-block-group alignwide">
         <div class="wp-block-group__inner-container">
-          <h4 class="has-text-align-center"><i class="fa fa-meetup"></i> Past events</h4>
+          <h4 class="has-text-align-center mb-10"><i class="fa fa-meetup"></i> Past events</h4>
+          <h5 class="has-text-align-center mt-10"><a href="/events" title="See all">See all</a>
         </div>
       </div>
       <div class="wp-block-columns columns alignwide">
