@@ -56,7 +56,7 @@
         </div>
       </div>
       <div class="wp-block-columns columns alignwide mt-0">
-        {{ range first 2 (where (where .Site.RegularPages "Section" "events") "Date" "ge" (now))}}
+        {{ range (first 2 (where (where .Site.RegularPages "Section" "events") "Date" "ge" (now))).Reverse }}
         <div class="column aligncenter">
           <div class="wp-block-group">
             <div class="wp-block-group__inner-container">
@@ -65,11 +65,11 @@
                   <img src="{{ .Params.Image |absURL }}" alt="{{.Title }}" class="wp-image-37"/>
                 </a>
               </figure>
-              <h4>
+              <h5>
                 <a href="{{ .Permalink }}" class="no-decoration" title="Read more">
                   {{ .Title }}
                 </a>
-              </h4>
+              </h5>
               <p>{{ .Date.Format "Jan 02 2006, 15:04 MST"}}</p>
               <div class="wp-block-button is-style-outline aligncenter">
                 <a class="wp-block-button__link" href="{{ .Permalink }}">Read More</a>
