@@ -1,5 +1,5 @@
-<article class="post type-post status-publish format-standard has-post-thumbnail hentry category-art category-editing tag-block tag-editor tag-gutenberg tag-wordpress" style="padding: 8rem 0;">
-	<header class="has-text-align-center" style="padding-bottom: 8rem;">
+<article class="post type-post status-publish format-standard has-post-thumbnail hentry category-art category-editing tag-block tag-editor tag-gutenberg tag-wordpress pt-40 pb-40">
+	<header class="has-text-align-center pb-30">
 		<div class="entry-header-inner section-inner medium">
 			<div class="entry-categories">
 				<span class="screen-reader-text">Categories</span>
@@ -9,7 +9,7 @@
 					{{ end }}
 				</div>
 			</div>
-			<h2 class="entry-title heading-size-1"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+			<h3 class="entry-title mt-30"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
 			<div class="post-meta-wrapper post-meta-single post-meta-single-top">
 				<ul class="post-meta">
 					<li class="post-date meta-wrapper">
@@ -27,15 +27,15 @@
 				</ul>
 			</div><!-- .post-meta-wrapper -->
       {{ if ge .Date.Unix now.Unix }}
-      <h4 class="upcoming">
+      <h5 class="upcoming mt-0">
         <i class="fa fa-meetup"></i>
         Upcoming Event!
-      </h4>
+      </h5>
       {{ end }}
 		</div><!-- .entry-header-inner -->
 	</header><!-- .entry-header -->
   {{if .Params.Path }}
-	<figure class="featured-media-">		
+	<figure class="featured-media-">
 		{{ $path := .Params.Path }}
 		{{ $filepath := printf "/static%s" $path }}
 		{{- $files := readDir $filepath }} 
@@ -43,14 +43,13 @@
 		{{- range $files -}} 
 			{{ if ne .Name ".DS_Store" }}
 				{{- $absoluteUrl := print $path "/" .Name | absURL }}
-				<img src="{{ $absoluteUrl | absURL }}" width="1200" height="769"
-				sizes="(max-width: 1200px) 100vw, 1200px">
+				<img src="{{ $absoluteUrl | absURL }}" width="1000" height="769">
 			{{ end }}
 		{{- end }} 
 		</div><!-- .featured-media-inner -->
 	</figure><!-- .featured-media -->
   {{end}}
-	<div class="post-inner thin">
+	<div class="post-inner thin pt-30">
 		<div class="entry-content summary">
 			<p>{{ .Summary }}</p>
 			<div class="wp-block-button is-style-outline">
