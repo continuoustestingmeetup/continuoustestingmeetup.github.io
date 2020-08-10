@@ -40,8 +40,7 @@
     <div class="home-slideshow featured-media-inner section-inner medium">    
       {{ range $imageUrl := (shuffle ($allImagesUrl)) }}
         {{if gt (len $imageUrl) 0}} 
-          <img src="{{ $imageUrl | absURL }}" width="1300" height="769"
-          class="upcoming" sizes="(max-width: 1300px) 120vw, 1300px">
+          <img src="{{ $imageUrl | absURL }}" width="1300" height="769" class="upcoming">
         {{ end }}
       {{ end }}
     </div>
