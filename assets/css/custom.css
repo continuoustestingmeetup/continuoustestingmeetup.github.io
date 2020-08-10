@@ -73,6 +73,11 @@ h4.upcoming {
     max-width: 105rem;
 }
 
+.singular .featured-media-event {
+	position: relative;
+	left: calc(50% - 50vw);
+	width: 60vw;
+}
 
 .mt-30 {
 	margin-top: 30px !important;

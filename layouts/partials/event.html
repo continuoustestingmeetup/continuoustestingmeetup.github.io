@@ -39,15 +39,15 @@
 		{{ $path := .Params.Path }}
 		{{ $filepath := printf "/static%s" $path }}
 		{{- $files := readDir $filepath }} 
-		<div class="slideshow featured-media-inner section-inner medium">
+		<div class="slideshow featured-media-event section-inner medium">
 		{{- range $files -}} 
 			{{ if ne .Name ".DS_Store" }}
 				{{- $absoluteUrl := print $path "/" .Name | absURL }}
 				<img src="{{ $absoluteUrl | absURL }}" width="1000" height="769">
 			{{ end }}
 		{{- end }} 
-		</div><!-- .featured-media-inner -->
-	</figure><!-- .featured-media -->
+		</div><!-- .featured-media-event -->
+	</figure>
   {{end}}
 	<div class="post-inner thin pt-30">
 		<div class="entry-content summary">
