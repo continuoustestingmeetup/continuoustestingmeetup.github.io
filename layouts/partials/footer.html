@@ -29,6 +29,11 @@
                     {{ .twitter_description | markdownify }}
                   </a>
                   <br>
+                  <a href="{{ .meetup_barcelona_url | absURL }}" target="_blank">
+                    <i class="{{ .meetup_barcelona_icon }}"></i>
+                    {{ .meetup_barcelona_description | markdownify }}
+                  </a>
+                  <br>
                   <a href="{{ .meetup_berlin_url | absURL }}" target="_blank">
                     <i class="{{ .meetup_berlin_icon }}"></i>
                     {{ .meetup_berlin_description | markdownify }}
