@@ -18,8 +18,6 @@ if you need any help to shape up your topic, do a dry run with you, and much
 more! Remember that you can start with a short lighning talk ⚡️ Everyone is
 welcome! Just mention your preferences in the submit form.
 
-{{< button-link "https://docs.google.com/forms/d/e/1FAIpQLSdXzHbmEspPpJPXkNfQ_ryxKlK7njF8AXfOvNDA31hzc_InNA/viewform" "Submit a proposal for Berlin" >}}
-
-{{< button-link "https://docs.google.com/forms/d/1EHA-QVELKQT4is8QVbOzJhATdK6iHRdAu-DdAuNCFGQ/viewform" "Submit a proposal for London" >}}
+{{< button-link "https://docs.google.com/forms/d/e/1FAIpQLSdXzHbmEspPpJPXkNfQ_ryxKlK7njF8AXfOvNDA31hzc_InNA/viewform" "Submit a proposal" >}}
 
 > If you would like to an online presentation, submit your proposal to either Berlin or London
