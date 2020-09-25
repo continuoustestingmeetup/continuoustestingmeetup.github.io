@@ -29,7 +29,7 @@
       {{- $directoryFullPath := printf "/static%s" $directoryPath }}
       {{- $imagesInDirectory := readDir $directoryFullPath }} 
       {{- range $imagesInDirectory -}} 
-        {{ if ne .Name ".DS_Store" }}
+        {{ if in .Name "_slideshow" }}
           {{- $absoluteUrl := print $directoryPath "/" .Name | absURL }}
           {{ $allImagesUrl = $allImagesUrl | append $absoluteUrl }}
         {{ end }}
