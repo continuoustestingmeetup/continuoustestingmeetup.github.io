@@ -1,3 +1,5 @@
 FROM gitpod/workspace-full
-USER gitpod
-RUN brew install hugo
+
+USER root
+# add your tools here
+RUN apt-get update && apt-get install -yq hugo
