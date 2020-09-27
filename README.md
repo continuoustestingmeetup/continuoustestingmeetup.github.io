@@ -22,4 +22,6 @@ The deployment detail can be seen at the GitHub workflow deploy [file](.github/w
 
 ## Starting the site and making changes in GitPod
 Be sure to have your account configured at GitPod, and then click the button below.
+
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/continuoustestingmeetup/continuoustestingmeetup.github.io)
