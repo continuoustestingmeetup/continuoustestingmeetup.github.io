@@ -1,3 +1,4 @@
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/continuoustestingmeetup/continuoustestingmeetup.github.io)
+# Continuous Testing Meetup Website
 
-# continuoustestingmeetup.github.io
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/continuoustestingmeetup/continuoustestingmeetup.github.io)
