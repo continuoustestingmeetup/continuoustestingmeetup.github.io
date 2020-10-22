@@ -4,6 +4,10 @@ p:not(.footer-copyright) {
     font-family: 'Montserrat', sans-serif !important;
 }
 
+li {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 .slick-prev:before,
 .slick-next:before
 {
