@@ -12,7 +12,7 @@ After cloning this repository and installing Hugo, you can use the following com
 ```
 hugo server --buildFuture
 ```
-You will set a URL on the command output, go there with your browser and see the
+You will see a URL on the command output, go there with your browser and see the
 rendered website.
 
 ## Deployment
