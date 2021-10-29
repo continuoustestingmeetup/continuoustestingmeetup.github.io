@@ -1,7 +1,8 @@
 backend:
   name: github
   branch: dev
-  repo: continuoustestingmeetup/continuoustestingmeetup.github.io/
+  repo: continuoustestingmeetup/continuoustestingmeetup.github.io
+  base_url: https://determined-varahamihira-67292a.netlify.app/
   auth_endpoint: auth
 publish_mode: editorial_workflow
 media_folder: "static/images"
