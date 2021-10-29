@@ -2,7 +2,6 @@ backend:
   name: github
   branch: dev
   repo: continuoustestingmeetup/continuoustestingmeetup.github.io/
-  base_url: https://www.continuoustestingmeetup.com/
   auth_endpoint: auth
 publish_mode: editorial_workflow
 media_folder: "static/images"
