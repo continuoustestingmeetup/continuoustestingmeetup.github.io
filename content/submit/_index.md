@@ -19,5 +19,3 @@ more! Remember that you can start with a short lighning talk ⚡️ Everyone is
 welcome! Just mention your preferences in the submit form.
 
 {{< button-link "https://docs.google.com/forms/d/e/1FAIpQLSdXzHbmEspPpJPXkNfQ_ryxKlK7njF8AXfOvNDA31hzc_InNA/viewform" "Submit a proposal" >}}
-
-> If you would like to an online presentation, submit your proposal to either Berlin or London
