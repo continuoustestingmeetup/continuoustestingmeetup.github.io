@@ -44,6 +44,11 @@
                     {{ .meetup_london_description | markdownify }}
                   </a>
                   <br>
+                  <a href="{{ .meetup_san_francisco_url | absURL }}" target="_blank">
+                    <i class="{{ .meetup_san_francisco_icon }}"></i>
+                    {{ .meetup_san_francisco_description | markdownify }}
+                  </a>
+                  <br>
                   <a href="{{ .github_url | absURL }}" target="_blank">
                     <i class="{{ .github_icon }}"></i>
                     {{ .github_description | markdownify }}
